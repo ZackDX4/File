@@ -1,39 +1,13 @@
 <!DOCTYPE html><html><head>
-<script src="/cdn-cgi/apps/head/aqhzBqkyhgXFT9tYquvCBE2xpuY.js"></script><style>div a img{visibility:hidden;}</style>
+<script src="/cdn-cgi/apps/head/H24hy8fJjLWB5scBtI23eJXWVa4.js"></script><style>div a img{visibility:hidden;}</style>
 <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 <meta name="referrer" content="no-referrer" />
-<script src='https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.1/shaka-player.ui.min.js' crossorigin='anonymous'></script>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.1/controls.min.css' crossorigin='anonymous' />
-<script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js?cb=6ebfddfd6fa3499c'></script></head><body><script>!function(a,b,c,d,e,f){a.ddjskey=e;a.ddoptions=f||null;var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.async=1,m.src=d,n.parentNode.insertBefore(m,n)}(window,document,"script","https://js.datadome.co/tags.js","99B1C08278137CE22ADB60CE8DE020", {"ajaxListenerPath": true});</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/shaka-player/3.0.7/shaka-player.ui.min.js' crossorigin='anonymous'></script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/shaka-player/3.0.7/controls.min.css' crossorigin='anonymous' />
 <body bgcolor='black' style='margin:0' oncontextmenu='return false' onkeydown='return false' onmousedown='return false'><script>!function(a,b,c,d,e,f){a.ddjskey=e;a.ddoptions=f||null;var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.async=1,m.src=d,n.parentNode.insertBefore(m,n)}(window,document,"script","https://js.datadome.co/tags.js","99B1C08278137CE22ADB60CE8DE020", {"ajaxListenerPath": true});</script>
 <div data-shaka-player-container style='position:absolute;z-index: -1;top: 0;left: 0;width: 100%; height: 100%;object-fit: cover;'><video autoplay data-shaka-player poster='https://i.imgur.com/bueNYoV.jpg' id='video' style='width:100%;height:100%;'></video></div>
 <script> 
-async function init() { 
-const video = document.getElementById('video'); 
-const ui = video['ui']; 
-const controls = ui.getControls(); 
-const player = controls.getPlayer(); 
-player.configure({
-  drm: {
-    clearKeys: {
-      // 'key-id-in-hex': 'key-in-hex',
-      '3afe30ee4ea24a67fe5a2ef06e83db0b': '27a2f71d87bf5eb105af096fb6605d97'
-    }
-  }
-});
-//player.configure({drm:{servers:{'com.widevine.alpha':'https://license.dstv.com/widevine/getLicense?CrmId=afl&AccountId=afl&ContentId=SH2&SessionId=D3C00F885C24B9C6&Ticket=C839A8D71AB94299'}}}); 
-window.player = player; 
-window.ui = ui; 
-player.addEventListener('error', onPlayerErrorEvent); 
-controls.addEventListener('error', onUIErrorEvent); 
-try{await player.load('https://unifi-live01.secureswiftcontent.com/UnifiHD/live03.mpd'); 
-console.log('The video has now been loaded!');} catch (error) {onPlayerError(error);}} 
-function onPlayerErrorEvent(errorEvent) {onPlayerError(event.detail);} 
-function onPlayerError(error) {console.error('Error code', error.code, 'object', error);} 
-function onUIErrorEvent(errorEvent) {onPlayerError(event.detail);} 
-function initFailed(errorEvent) {console.error('Unable to load the UI library!');} 
-document.addEventListener('shaka-ui-loaded', init); 
-document.addEventListener('shaka-ui-load-failed', initFailed); 
+var _0xe108=["\x76\x69\x64\x65\x6F","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x75\x69","\x67\x65\x74\x43\x6F\x6E\x74\x72\x6F\x6C\x73","\x67\x65\x74\x50\x6C\x61\x79\x65\x72","\x32\x37\x61\x32\x66\x37\x31\x64\x38\x37\x62\x66\x35\x65\x62\x31\x30\x35\x61\x66\x30\x39\x36\x66\x62\x36\x36\x30\x35\x64\x39\x37","\x63\x6F\x6E\x66\x69\x67\x75\x72\x65","\x70\x6C\x61\x79\x65\x72","\x65\x72\x72\x6F\x72","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x75\x6E\x69\x66\x69\x2D\x6C\x69\x76\x65\x30\x31\x2E\x73\x65\x63\x75\x72\x65\x73\x77\x69\x66\x74\x63\x6F\x6E\x74\x65\x6E\x74\x2E\x63\x6F\x6D\x2F\x55\x6E\x69\x66\x69\x48\x44\x2F\x6C\x69\x76\x65\x30\x33\x2E\x6D\x70\x64","\x6C\x6F\x61\x64","\x54\x68\x65\x20\x76\x69\x64\x65\x6F\x20\x68\x61\x73\x20\x6E\x6F\x77\x20\x62\x65\x65\x6E\x20\x6C\x6F\x61\x64\x65\x64\x21","\x6C\x6F\x67","\x64\x65\x74\x61\x69\x6C","\x45\x72\x72\x6F\x72\x20\x63\x6F\x64\x65","\x63\x6F\x64\x65","\x6F\x62\x6A\x65\x63\x74","\x55\x6E\x61\x62\x6C\x65\x20\x74\x6F\x20\x6C\x6F\x61\x64\x20\x74\x68\x65\x20\x55\x49\x20\x6C\x69\x62\x72\x61\x72\x79\x21","\x73\x68\x61\x6B\x61\x2D\x75\x69\x2D\x6C\x6F\x61\x64\x65\x64","\x73\x68\x61\x6B\x61\x2D\x75\x69\x2D\x6C\x6F\x61\x64\x2D\x66\x61\x69\x6C\x65\x64"];async function init(){const _0x6323x2=document[_0xe108[1]](_0xe108[0]);const _0x6323x3=_0x6323x2[_0xe108[2]];const _0x6323x4=_0x6323x3[_0xe108[3]]();const _0x6323x5=_0x6323x4[_0xe108[4]]();_0x6323x5[_0xe108[6]]({drm:{clearKeys:{'\x33\x61\x66\x65\x33\x30\x65\x65\x34\x65\x61\x32\x34\x61\x36\x37\x66\x65\x35\x61\x32\x65\x66\x30\x36\x65\x38\x33\x64\x62\x30\x62':_0xe108[5]}}});window[_0xe108[7]]= _0x6323x5;window[_0xe108[2]]= _0x6323x3;_0x6323x5[_0xe108[9]](_0xe108[8],onPlayerErrorEvent);_0x6323x4[_0xe108[9]](_0xe108[8],onUIErrorEvent);try{ await _0x6323x5[_0xe108[11]](_0xe108[10]);console[_0xe108[13]](_0xe108[12])}catch(error){onPlayerError(error)}}function onPlayerErrorEvent(_0x6323x7){onPlayerError(event[_0xe108[14]])}function onPlayerError(_0x6323x9){console[_0xe108[8]](_0xe108[15],_0x6323x9[_0xe108[16]],_0xe108[17],_0x6323x9)}function onUIErrorEvent(_0x6323x7){onPlayerError(event[_0xe108[14]])}function initFailed(_0x6323x7){console[_0xe108[8]](_0xe108[18])}document[_0xe108[9]](_0xe108[19],init);document[_0xe108[9]](_0xe108[20],initFailed)
 </script>
 <script type='text/javascript' src='https://encrypt2.mastrolive.xyz/udp/Counter'></script>
 <script type="text/javascript">(function(){window['__CF$cv$params']={r:'6ebfddfd6fa3499c',m:'D4YJv6au4IB.PA2DqTLxZStJydWh51fiwv2G9eC_8Gk-1647290874-0-AYjwUV5YDhzDCl2C9r7Xi8tcRCaEcQTbCAMGCeTNqDvB45L3MnGBdkKHu6G387dXhgYcctN3ANz21D9fu1HhsRAcyKR0VCGqS9aNi6PQ8MvMDWfoO6WhJhqlukHMDXtYfg==',s:[0x6c6fafcade,0x9f5e65094f],u:'/cdn-cgi/challenge-platform/h/g'}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6ebfddfd6fa3499c","version":"2021.12.0","r":1,"token":"a919438182254588b33b5297605b9ab4","si":100}' crossorigin="anonymous"></script>
