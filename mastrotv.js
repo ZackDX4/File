@@ -18,7 +18,7 @@ var jwDefaults = {
   "height": 260,
   "key": "FIzecMJIkw3iEykWCXJ0kdv9YjUMMFJ/jFZ+2+BepiUQ658Wq16+0iEP/OB1XlG8",
   "logo": {
-    "file": "https://i.postimg.cc/SN9BKn6s/mastrologo.png",
+    "file": "#",
     "hide": false,
     "margin": "10",
     "position": "bottom-right"
